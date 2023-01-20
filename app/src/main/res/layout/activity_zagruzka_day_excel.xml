@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZagruzkaDayExcel">
+
+    <LinearLayout
+        android:id="@+id/ExcelLinearLayout00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ExcelLinearLayout011"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ExcelbuttonDownloadExcel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/button_file" />
+        <Button
+            android:id="@+id/ExcelbuttonShowAllExcel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_show" />
+        <Button
+            android:id="@+id/ExcelbuttonClearAll"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_clear" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ExcelLinearLayout0111"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/textViewTEST"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TEST:" />
+        </ScrollView>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/ExelDocIDTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="-1" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/ExcelViewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ArhivJournal.v59</string>
+
+    <string name="button_add">add</string>
+    <string name="button_new">new</string>
+    <string name="button_del">del</string>
+    <string name="button_mody">mody</string>
+    <string name="button_ok">ok</string>
+    <string name="button_save">save</string>
+    <string name="button_cancel">cancel</string>
+   <!-- <string name="button_download">download</string> -->
+    <string name="button_file">file</string>
+    <string name="button_search">find</string>
+    <string name="button_show">show</string>
+    <string name="button_clear">clear</string>
+
+    <string name="button_main01">All cards are archived. Enter data on the issued card</string>
+    <string name="button_main02">All cards are archived. Enter data on the issued card from the EXCEL list/string></string>
+
+
+
+</resources>

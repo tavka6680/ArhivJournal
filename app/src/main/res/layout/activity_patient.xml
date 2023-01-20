@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient">
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:layout_editor_absoluteX="1dp"
+tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:text="Kартa" />
+
+        <Spinner
+            android:id="@+id/editTextCardNumSpinner"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/editTextCardNum"
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:layout_height="40dp"></EditText>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_new"
+            android:layout_width="75dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="buttonNEWpacient"/>
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:text="ФИО" />
+
+    <EditText
+        android:id="@+id/editTextFIO"
+        android:layout_width="230dp"
+        android:layout_height="40dp"></EditText>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_del"
+        android:layout_width="75dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="buttonDELpacient"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:text="Дата рождения" />
+    <EditText
+        android:id="@+id/editTextbirthday"
+        android:layout_width="160dp"
+        android:layout_height="40dp">
+    </EditText>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_save"
+        android:layout_width="75dp"
+        android:layout_marginEnd="5dp"
+        android:onClick="buttonSAVEpacient"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:text="№ Коробки в архиве" />
+        <EditText
+            android:id="@+id/editTextboxnumber"
+            android:layout_width="130dp"
+            android:layout_height="40dp">
+        </EditText>
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/button_search"
+            android:layout_width="75dp"
+            android:layout_marginEnd="5dp"
+            android:onClick="buttonFILEpacient"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/TableLayoutPacient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+</LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

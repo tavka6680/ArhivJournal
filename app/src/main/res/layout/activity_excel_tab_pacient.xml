@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExcelTabPacient">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="ФИО" />
+            <EditText
+                android:id="@+id/editExcelFIO"
+                android:layout_width="200dp"
+                android:layout_height="40dp"></EditText>
+            <Spinner
+                android:id="@+id/editExcelFIOSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+            <EditText
+                android:id="@+id/editExcelFIOid"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="40dp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Kартa" />
+            <EditText
+                android:id="@+id/editExcelCard"
+                android:layout_width="150dp"
+                android:layout_height="40dp"></EditText>
+            <Spinner
+                android:id="@+id/editExcelCardNumSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+            <EditText
+                android:id="@+id/editExcelCardNum"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="40dp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="Дата рождения" />
+            <EditText
+                android:id="@+id/editExcelbirthday"
+                android:layout_width="160dp"
+                android:layout_height="40dp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:text="№ Коробки в архиве" />
+            <EditText
+                android:id="@+id/editExcelboxnumber"
+                android:layout_width="130dp"
+                android:layout_height="40dp">
+            </EditText>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/button_save"
+                android:layout_width="75dp"
+                android:layout_marginEnd="5dp"
+                android:onClick="buttonSAVEpacient"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
